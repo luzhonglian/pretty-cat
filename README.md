@@ -1,12 +1,12 @@
-# 美猫网
+# 全栈项目：美猫网（Vue3.2+Nodejs+MongoDB）
 
 ## 目录
 
-- [美猫网](#美猫网)
+- [全栈项目：美猫网（Vue3.2+Nodejs+MongoDB）](#全栈项目美猫网vue32nodejsmongodb)
+  - [目录](#目录)
   - [项目演示 ](#项目演示-)
   - [项目介绍 ](#项目介绍-)
   - [项目运行准备 ](#项目运行准备-)
-    - [安装 node 和 npm](#安装-node-和-npm)
   - [项目运行 ](#项目运行-)
   - [开发中的踩坑记录 ](#开发中的踩坑记录-)
   - [感想 ](#感想-)
@@ -17,14 +17,16 @@ https://www.bilibili.com/video/BV1hm4y1573b
 
 ## 项目介绍 <a name = "about"></a>
 
-**前端**：Vue-cli+Element Plus+Vue3.2+setup 语法糖编写（文件夹 admin、web）  
+**前端**：Vue-cli+Element Plus+Vue3.2+setup 语法糖编写  
+前端分为  
+-----**用户网页**（文件夹 web）  
+-----**后台管理网页**（文件夹 web）  
 **后端**：express+multer+mongoDB 编写（文件夹 server）  
-**项目内容**：  
-略多，详见项目演示
+**项目内容**： 略多，详见项目演示
 
 ## 项目运行准备 <a name = "getting_started"></a>
 
-### 安装 node 和 npm
+**安装 node、npm、mongoDB**
 
 ## 项目运行 <a name = "usage"></a>
 
@@ -32,6 +34,8 @@ https://www.bilibili.com/video/BV1hm4y1573b
 //进入server
 npm install
 npm start
+//连接mongoDB，推荐使用compass
+
 //进入web
 npm install
 npm run serve
