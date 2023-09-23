@@ -20,7 +20,7 @@ https://www.bilibili.com/video/BV1hm4y1573b
 **前端**：Vue-cli+Element Plus+Vue3.2+setup 语法糖编写  
 前端分为  
 -----**用户网页**（文件夹 web）  
------**后台管理网页**（文件夹 web）  
+-----**后台管理网页**（文件夹 admin）  
 **后端**：express+multer+mongoDB 编写（文件夹 server）  
 **项目内容**： 略多，详见项目演示
 
