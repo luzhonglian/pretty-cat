@@ -1,17 +1,7 @@
 # admin
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
+美猫网后台管理
 ### jwt登录逻辑
-
+  
 登陆后,后端发token，前端拦截响应存localStorage（axios:response）
 
 前端之后发送请求都带上token（axios:request拦截）
@@ -22,6 +12,15 @@ npm run serve
 
 前端对401拦截（axios:response），移除过期token，回到登录页 
 
+>/src/utils/axios.config.js
+### 权限控制的终极解决方案
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### wangEditor封装以及配置
+
+>/src/components/editor/Editor.vue
+
+
+
+
+
