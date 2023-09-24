@@ -17,10 +17,10 @@
 [权限控制的终极解决方案.md](./src/router/权限控制的终极解决方案.md)
 
 ### wangEditor封装以及配置
-Editor.vue
+Editor.vue  
 [Editor.vue](./src/components/editor/Editor.vue)
 
-[wangEditor上传图片前后端配置.md](./src/components/editor/wangEditor上传图片前后端配置(Vue+Nodejs+MongoDB)).md
+[wangEditor上传图片前后端配置](./src/components/editor/wangEditor上传图片前后端配置(Vue+Nodejs+MongoDB).md)
 
 
 
