@@ -12,7 +12,7 @@
 
 前端对401拦截（axios:response），移除过期token，回到登录页 
 
->https://github.com/luzhonglian/pretty-cat/blob/main/admin/src/utils/axios.config.js
+[axios.config.js](./src/utils/axios.config.js)
 ### 权限控制的终极解决方案
 >https://github.com/luzhonglian/pretty-cat/blob/main/admin/src/router/%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6%E7%9A%84%E7%BB%88%E6%9E%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md
 
