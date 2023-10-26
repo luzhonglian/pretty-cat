@@ -22,12 +22,14 @@ const UserController = {
           introduction: result.introduction,
           avatar: result.avatar,
           role: result.role, //admin:1,editor:2
+          _id: result._id,
         },
       });
     }
   },
+
   upload: async (req, res) => {
-    const { username, gender, introduction,password } = req.body;
+    const { username, gender, introduction, password } = req.body;
     const token = req.headers.authorization.split(" ")[1];
     let payload = JWT.verify(token);
     //avatar要抓换为在后端的地址
@@ -39,7 +41,7 @@ const UserController = {
       avatar,
       gender: Number(gender),
       introduction,
-      password
+      password,
     });
     if (avatar) {
       res.send({
@@ -63,11 +65,14 @@ const UserController = {
     }
   },
   add: async (req, res) => {
-    const { username, gender, introduction, role, password } = req.body;
+    let { username, gender, introduction, role, password } = req.body;
     //avatar在前端是后端返回的存储地址/上传时的blob地址
     //在后端是相对路径
     const avatar = req.file ? `/avatars/${req.file.filename}` : "";
-
+    //. 下面的是为了uniapp项目小猫店加的，其不需要这些字段
+    gender ??= 0;
+    role ??= 2;
+    introduction ??= "";
     await UserService.add({
       username,
       avatar,
@@ -82,7 +87,7 @@ const UserController = {
   },
   patchUser: async (req, res) => {
     await UserService.patchUser(req.body);
-    console.log(req.body)
+    console.log(req.body);
     res.send({
       ActionType: "ok",
     });
@@ -101,5 +106,4 @@ const UserController = {
     });
   },
 };
-
 module.exports = UserController;
