@@ -2,6 +2,8 @@ const OrderService = require("../../services/store/order-service");
 const OrderController = {
   getList: async (req, res) => {
     let result = await OrderService.getList(req.params?._id);
+    result.length &&
+      result[0].orderList.sort((a, b) => b.time.getTime() - a.time.getTime());
     res.send({
       ActionType: "ok",
       data: result,
